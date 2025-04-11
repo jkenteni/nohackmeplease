@@ -66,5 +66,5 @@ Este projeto é licenciado sob a **Licença MIT** - veja o arquivo [LICENSE](LIC
 ## 🏅 Status do Projeto
 
 ![Status](https://img.shields.io/badge/Status-BETA-red)
-![JavaScript](https://img.shields.io/badge/Python-3.x-yellow)
+![JavaScript](https://img.shields.io/badge/JavaScript-yellow)
 ![License](https://img.shields.io/badge/License-MIT-green)
