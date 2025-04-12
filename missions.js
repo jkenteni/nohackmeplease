@@ -129,8 +129,8 @@ window.processCommand = function(cmd) {
     response = `Reputação: ${getReputationTitle()} (${reputation} XP)`;
   }
 
-  // Verifica se é o comando certo da missão
-  else if (cmd === mission.requiredCommand) {
+  // Verifica se é o comando certo da missão (case-insensitive)
+  else if (cmd.trim().toLowerCase() === mission.requiredCommand.trim().toLowerCase()) {
     response = `> ${cmd} executado com sucesso.\n[✔] Missão concluída: ${mission.title}`;
     mission.completed = true;
     reputation += 20;
