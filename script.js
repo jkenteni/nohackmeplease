@@ -5,16 +5,16 @@ const laptop = document.getElementById("laptop");
 const input = document.getElementById("input");
 let gameStarted = false;
 
-// Iniciar jogo ao pressionar qualquer tecla uma vez
-document.addEventListener("keydown", () => {
-  if (!gameStarted) {
-    gameStarted = true;
-    intro.classList.add("hidden");
-    laptop.classList.remove("hidden");
-    input.focus();
-    startGame();
-  }
-});
+document.addEventListener("keydown", (event) => {
+    if (!gameStarted && event.code === "Space") {
+      gameStarted = true;
+      intro.classList.add("hidden");
+      laptop.classList.remove("hidden");
+      input.focus();
+      startGame();
+    }
+  });
+  
 
 // Comando ao pressionar Enter
 input.addEventListener("keydown", function (e) {

@@ -51,6 +51,12 @@
     display: flex;
     align-items: center;
   }
+
+  #output {
+    font-family: monospace;
+    line-height: 1.2;
+    white-space: pre-wrap;
+  }  
   
   #input {
     background: transparent;
@@ -106,5 +112,21 @@
     0% { clip-path: inset(80% 0 0 0); }
     100% { clip-path: inset(0 0 0 0); }
   }
+
+  #credits {
+    width: 100%;
+    padding: 8px 0;
+    text-align: center;
+    font-family: monospace;
+    font-size: 14px;
+    background-color: #111;
+    color: #00ff88;
+    border-top: 1px solid #00ff88;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+  }
+  
   
   
